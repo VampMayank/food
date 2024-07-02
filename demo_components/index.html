@@ -41,6 +41,11 @@
             font-size: larger;
         }
 
+        #nabut:hover {
+            color: #fff;
+            text-decoration: #fff;
+        }
+
 
         .dropdown-menu {
             background-color: #ad795b;
@@ -74,7 +79,7 @@
 
         #hrf {
             height: 3px;
-            background-color: #3a1a1a;
+            background-color: #000000;
 
         }
 
@@ -144,7 +149,7 @@
             object-fit: cover;
             /* Ensure video covers entire container */
             border: #ad795b;
-            border-style:ridge;
+            border-style: ridge;
             border-radius: 900px;
 
         }
@@ -170,6 +175,17 @@
             padding: 10px;
             /* Optional: add padding to the icons */
         }
+
+        #trend {
+            
+            padding: 0.25em 0.5em;
+            
+            font-family: cursive;
+        }
+        .food_container{
+            background-color: #ffffff;
+            border-radius: 20px;
+        }
     </style>
 </head>
 
@@ -186,15 +202,14 @@
             <div class="collapse navbar-collapse justify-content-center" id="navbar">
                 <ul class="navbar-nav mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a href="#" class="nav-link">Home</a>
+                        <a href="index.html" class="nav-link">Home</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown"
                             data-bs-toggle="dropdown">Services</a>
                         <ul class="dropdown-menu">
-                            <li><a href="#" class="dropdown-item">Service1</a></li>
-                            <li><a href="#" class="dropdown-item">Service2</a></li>
-                            <li><a href="#" class="dropdown-item">Service3</a></li>
+                            <li><a href="#" class="dropdown-item">Trending</a></li>
+                            <li><a href="#" class="dropdown-item">Menu</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
@@ -207,12 +222,16 @@
                 <form action="#" class="d-flex justify-content-center mx-auto">
                     <input type="search" class="form-control me-2" placeholder="Search" style="width: 600px;"
                         aria-label="Search">
-                    <button class="btn btn-outline-success rounded-pill" type="submit">Search</button>
+                    <button class="btn btn-outline-success rounded-pill" id="nabut" type="submit">Search</button>
                 </form>
                 <div class="ms-lg-3 ">
                     <button class="btn btn-dark rounded-pill" type="submit" style="height: 40px;width: 100px;"><a
                             href="login.html" style="color: #fff;text-decoration: none;">Login</a></button>
                 </div>
+                <a data-mdb-ripple-init class="btn btn-outline-success text-black m-1" id="nabut"
+                    href="https://www.instagram.com/" role="button">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </a>
             </div>
 
         </div>
@@ -271,10 +290,13 @@
     <!--corousel-->
     <div id="carouselExampleAutoplaying" class="carousel slide container" data-bs-ride="carousel">
         <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-          </div>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <div class="container-md  my-3 hero_container">
@@ -290,10 +312,12 @@
                         </div>
                         <div class="col-md-6 d-flex justify-content-end text-container">
                             <div>
-                                <h1 class="fs-1 fw-bolder">Lorem ipsum dolor sit amet.</h1>
-                                <p class="fs-3 fw-semibold fst-italic">Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit. Vero fugit blanditiis debitis repellat expedita animi non modi
-                                    sunt repudiandae nemo?</p>
+                                <h1 class="fs-1 fw-bolder">Want Something Hot... </h1>
+                                <p class="fs-3 fw-semibold fst-italic">Whether you're a fan of the classic Margherita, a
+                                    devotee of the meat-lover's delight, or an adventurous soul exploring the pineapple
+                                    frontier, pizza is the universal language of joy, a culinary hug that brings people
+                                    together one glorious slice at a time.
+                                </p>
                                 <div class="buttons">
                                     <button class="btn btn-outline-success rounded-pill">Order Now</button>
                                     <button class="btn btn-outline-primary btn-lg mx-2">Watch Now</button>
@@ -309,7 +333,7 @@
                         <div class="col-md-6 d-flex justify-content-center align-items-center">
                             <div class="video-container">
                                 <video autoplay muted loop>
-                                    <source src="6093407-uhd_4096_2160_30fps.mp4" type="video/mp4">
+                                    <source src="4131833-hd_1920_1080_24fps.mp4" type="video/mp4">
 
                                     Your browser does not support the video tag.
                                 </video>
@@ -336,7 +360,7 @@
                         <div class="col-md-6 d-flex justify-content-center align-items-center">
                             <div class="video-container">
                                 <video autoplay muted loop>
-                                    <source src="6093407-uhd_4096_2160_30fps.mp4" type="video/mp4">
+                                    <source src="2869090-hd_1920_1080_24fps.mp4" type="video/mp4">
 
                                     Your browser does not support the video tag.
                                 </video>
@@ -368,16 +392,23 @@
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
         </button>
-    </div>
+    </div><br>
 
 
 
     <!--food cards and columns-->
-    <div class="food_container container ">
-        <div class="row p-5">
-            <div class="card_container col-2 shadow-lg rounded py-3">
+
+
+
+
+    <div class="food_container container  ">
+        <div class="col m-5" id="trend">
+                <h1 style="font-size: 100px;color: #ad795b;">╤╝<sub>rending</sub></h1>
+        </div>
+        <div class="row p-5 ">
+            <div class="card_container col-2 shadow-lg m-5 rounded py-3">
                 <div class="card">
-                    <img src="pexels-souvenirpixels-1519088.jpg" alt="" class="w-100 h-100">
+                    <img src="pexels-rdne-6529599.jpg" alt="" class="w-100 h-100">
                     <div class="card-body">
                         <h5 class="card-title">food name</h5>
                         <p class="cart-text">Lorem ipsum dolor sit amet.</p>
@@ -385,56 +416,78 @@
                     </div>
                 </div>
             </div>
-            <div class="card_container col-2">
+            <div class="card_container col-2 shadow-lg m-5 rounded py-3">
                 <div class="card">
-                    <img src="" alt="">
+                    <img src="pexels-valeriya-1199960.jpg" alt="" class="w-100 h-100">
                     <div class="card-body">
-                        <h5 class="card-title"></h5>
-                        <p class="cart-text"></p>
-                        <a href="" class="btn"></a>
+                        <h5 class="card-title">food name</h5>
+                        <p class="cart-text">Lorem ipsum dolor sit amet.</p>
+                        <a href="" class="btn bg-success">like</a>
                     </div>
                 </div>
             </div>
-            <div class="card_container col-2">
+            <div class="card_container col-2 shadow-lg m-5 rounded py-3">
                 <div class="card">
-                    <img src="" alt="">
+                    <img src="pexels-ash-122861-376464.jpg" alt="" class="w-100 h-100">
                     <div class="card-body">
-                        <h5 class="card-title"></h5>
-                        <p class="cart-text"></p>
-                        <a href="" class="btn"></a>
+                        <h5 class="card-title">food name</h5>
+                        <p class="cart-text">Lorem ipsum dolor sit amet.</p>
+                        <a href="" class="btn bg-success">like</a>
                     </div>
                 </div>
             </div>
-            <div class="card_container col-2">
+            <div class="card_container col-2 shadow-lg m-5 rounded py-3">
                 <div class="card">
-                    <img src="" alt="">
+                    <img src="pexels-fotios-photos-1279330.jpg" alt="" class="w-100 h-100">
                     <div class="card-body">
-                        <h5 class="card-title"></h5>
-                        <p class="cart-text"></p>
-                        <a href="" class="btn"></a>
+                        <h5 class="card-title">food name</h5>
+                        <p class="cart-text">Lorem ipsum dolor sit amet.</p>
+                        <a href="" class="btn bg-success">like</a>
                     </div>
                 </div>
             </div>
-            <div class="card_container col-2">
+            <div class="card_container col-2 shadow-lg m-5 rounded py-3">
                 <div class="card">
-                    <img src="" alt="">
+                    <img src="pexels-fariphotography-803963.jpg" alt="" class="w-100 h-100">
                     <div class="card-body">
-                        <h5 class="card-title"></h5>
-                        <p class="cart-text"></p>
-                        <a href="" class="btn"></a>
+                        <h5 class="card-title">food name</h5>
+                        <p class="cart-text">Lorem ipsum dolor sit amet.</p>
+                        <a href="" class="btn bg-success">like</a>
                     </div>
                 </div>
             </div>
-            <div class="card_container col-2">
+            <div class="card_container col-2 shadow-lg m-5 rounded py-3">
                 <div class="card">
-                    <img src="" alt="">
+                    <img src="pexels-brigitte-tohm-36757-239581.jpg" alt="" class="w-100 h-100">
                     <div class="card-body">
-                        <h5 class="card-title"></h5>
-                        <p class="cart-text"></p>
-                        <a href="" class="btn"></a>
+                        <h5 class="card-title">food name</h5>
+                        <p class="cart-text">Lorem ipsum dolor sit amet.</p>
+                        <a href="" class="btn bg-success">like</a>
                     </div>
                 </div>
             </div>
+            <div class="card_container col-2 shadow-lg m-5 rounded py-3">
+                <div class="card">
+                    <img src="pexels-sydney-troxell-223521-718742.jpg" alt="" class="w-100 h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">food name</h5>
+                        <p class="cart-text">Lorem ipsum dolor sit amet.</p>
+                        <a href="" class="btn bg-success">like</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card_container col-2 shadow-lg m-5 rounded py-3">
+                <div class="card">
+                    <img src="pexels-mariana-kurnyk-844465-1775043.jpg" alt="" class="w-100 h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">food name</h5>
+                        <p class="cart-text">Lorem ipsum dolor sit amet.</p>
+                        <a href="" class="btn bg-success">like</a>
+                    </div>
+                </div>
+            </div>
+
+
 
         </div>
     </div>
@@ -465,7 +518,7 @@
             </section>
         </div>
         <div class="d-flex justify-content-center">
-            <hr width="50%" id="hrf">
+            <hr width="50%" id="">
         </div>
         <div class="text-center p-3" style="color: white;">
             <button class="btn custom-btn">Just Hang On ☻☻☻&nbsp; Mail to
@@ -475,6 +528,8 @@
     </footer>
 
     <!-- footer end -->
+
+
 
 </body>
 
