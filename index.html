@@ -12,182 +12,11 @@
         crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-
-    <style>
-        body {
-            height: 150vh;
-            display: flex;
-            flex-direction: column;
-            background-color: rgb(253, 246, 236);
-            background-size: 300vh;
-            padding-top: 40px;
-        }
+    <link rel="stylesheet" href="styling\index.css">
 
 
-        .navbar {
-            background-color: rgb(253, 231, 201);
-        }
-
-        .navbar-brand,
-        .nav-link {
-            color: rgb(0, 0, 0);
-        }
-
-        .navbar-toggler {
-            border-color: rgb(61, 58, 58);
-        }
-
-        .nav-item {
-            font-size: larger;
-        }
-
-        #nabut:hover {
-            color: #fff;
-            text-decoration: #fff;
-        }
 
 
-        .dropdown-menu {
-            background-color: #ad795b;
-        }
-
-        .dropdown-item:hover {
-            background-color: rgb(255, 125, 65);
-            color: rgb(0, 0, 0);
-        }
-
-        .dropdown-item {
-            color: rgb(255, 255, 255)
-        }
-
-        .aa {
-            color: rgb(255, 255, 255);
-        }
-
-        .btn:hover {
-            color: black;
-        }
-
-
-        #sop {
-            background-color: rgb(253, 231, 201);
-        }
-
-        #brand:hover {
-            filter: grayscale(100px);
-        }
-
-        #hrf {
-            height: 3px;
-            background-color: #000000;
-
-        }
-
-        .text {
-            color: white;
-            text-decoration: none;
-        }
-
-        .text:hover {
-            font-weight: 600;
-        }
-
-        .custom-btn {
-            background-color: #000000;
-            color: #fff;
-        }
-
-        .custom-btn:hover {
-            background-color: #208839;
-            color: rgb(0, 0, 0);
-        }
-
-        #cardd {
-            width: 500px;
-            box-shadow: 0 0 10px 10px rgb(30, 34, 8);
-            border: 0cqb;
-        }
-
-        .card {
-            background-color: #9cc702;
-            background: transparent;
-        }
-
-        label {
-            color: #000000;
-        }
-
-        .custom-bt {
-            background-color: #ffffff;
-        }
-
-        .hero_container {
-            background: transparent;
-            width: 100%;
-
-        }
-
-        .video-container {
-            display: flex;
-            justify-self: end;
-            align-items: self-end;
-            height: 100%;
-            width: 100%;
-            padding-top: 100%;
-            /* 1:1 Aspect Ratio */
-            position: relative;
-
-
-        }
-
-        .video-container video {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 90%;
-            height: 90%;
-            object-fit: cover;
-            /* Ensure video covers entire container */
-            border: #ad795b;
-            border-style: ridge;
-            border-radius: 900px;
-
-        }
-
-        .text-container {
-            margin-top: 2rem;
-            /* Adjust spacing */
-            width: 50%;
-        }
-
-        @media (max-width: 768px) {
-            .text-container {
-                margin-top: 0;
-            }
-        }
-
-        .carousel-control-prev-icon,
-        .carousel-control-next-icon {
-            background-color: #000;
-            /* Change this to the color you want */
-            border-radius: 50%;
-            /* Optional: make the background circular */
-            padding: 10px;
-            /* Optional: add padding to the icons */
-        }
-
-        #trend {
-            
-            padding: 0.25em 0.5em;
-            
-            font-family: cursive;
-        }
-        .food_container{
-            background-color: #ffffff;
-            border-radius: 20px;
-            margin-bottom: 100px;
-        }
-    </style>
 </head>
 
 <body>
@@ -195,7 +24,7 @@
     <nav class="navbar navbar-expand-lg mx-auto my-0 fixed-top">
         <div class="container-fluid">
             <a href="#" class="navbar-brand d-flex align-items-center mx-auto">
-                <img width="130" id="brand" height="45" src="Food.png" alt="" style="border-radius: 20px;">
+                <img width="130" id="brand" height="45" src="assets/Food.png" alt="" style="border-radius: 20px;">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar">
                 <span class="navbar-toggler-icon"></span>
@@ -217,7 +46,7 @@
                         <a href="about.html" class="nav-link">About Us</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">Contact</a>
+                        <a href="contact.html" class="nav-link">Contact</a>
                     </li>
                 </ul>
                 <form action="#" class="d-flex justify-content-center mx-auto">
@@ -239,41 +68,18 @@
     </nav><br><br><br><br>
 
 
-    <!-- <div class="container-md  my-3 hero_container">
-        <div class="row">
-            <div class="col-md-6 d-flex justify-content-center align-items-center">
-                <div class="video-container">
-                    <video autoplay muted loop>
-                        <source src="6093407-uhd_4096_2160_30fps.mp4" type="video/mp4">
-                      
-                        Your browser does not support the video tag.
-                    </video>
-                </div>
-            </div>
-            <div class="col-md-6 d-flex justify-content-end text-container">
-                <div>
-                    <h1 class="fs-1 fw-bolder">Lorem ipsum dolor sit amet.</h1>
-                    <p class="fs-3 fw-semibold fst-italic">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero fugit blanditiis debitis repellat expedita animi non modi sunt repudiandae nemo?</p>
-                    <div class="buttons">
-                        <button class="btn btn-outline-success rounded-pill">Order Now</button>
-                        <button class="btn btn-outline-primary btn-lg mx-2">Watch Now</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-     -->
 
 
 
 
-    <!--hero section-->
-    <!-- <div class="hero_container container-md bg-secondary my-4" style="backdrop-filter: blur(20px);">
+
+    <!-- hero section -->
+    <div class="hero_container container-md bg-secondary my-4" style="backdrop-filter: blur(20px);">
         <div class="row">
             <div class="col-6 d-flex flex-column justify-content-center align-items-center p-5 ">
-                <!-- heading -->
-    <!-- <p class="fs-1 fw-bolder">Lorem ipsum dolor sit amet.</p>
-                
+
+                <p class="fs-1 fw-bolder">Lorem ipsum dolor sit amet.</p>
+
                 <p class="fs-3 fw-semibold fst-italic">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
                     fugit blanditiis debitis repellat expedita animi non modi sunt repudiandae nemo?</p>
                 <div class="buttons d-flex container">
@@ -281,11 +87,14 @@
                     <button>watch now</button>
                 </div>
             </div>
-            
+            <div class="col-6 d-flex flex-column justify-content-center align-items-center p-5 ">
+
+                <img src="assets/Food.png" alt="">
+            </div>
+
 
         </div>
-    </div> 
-
+    </div>
 
 
     <!--corousel-->
@@ -305,7 +114,7 @@
                         <div class="col-md-6 d-flex justify-content-center align-items-center">
                             <div class="video-container">
                                 <video autoplay muted loop>
-                                    <source src="6093407-uhd_4096_2160_30fps.mp4" type="video/mp4">
+                                    <source src="assets\6093407-uhd_4096_2160_30fps.mp4" type="video/mp4">
 
                                     Your browser does not support the video tag.
                                 </video>
@@ -334,7 +143,7 @@
                         <div class="col-md-6 d-flex justify-content-center align-items-center">
                             <div class="video-container">
                                 <video autoplay muted loop>
-                                    <source src="4131833-hd_1920_1080_24fps.mp4" type="video/mp4">
+                                    <source src="assets\4131833-hd_1920_1080_24fps.mp4" type="video/mp4">
 
                                     Your browser does not support the video tag.
                                 </video>
@@ -361,7 +170,7 @@
                         <div class="col-md-6 d-flex justify-content-center align-items-center">
                             <div class="video-container">
                                 <video autoplay muted loop>
-                                    <source src="2869090-hd_1920_1080_24fps.mp4" type="video/mp4">
+                                    <source src="assets\2869090-hd_1920_1080_24fps.mp4" type="video/mp4">
 
                                     Your browser does not support the video tag.
                                 </video>
@@ -404,12 +213,43 @@
 
     <div class="food_container container  ">
         <div class="col m-5" id="trend">
-                <h1 style="font-size: 100px;color: #ad795b;">╤╝<sub>rending</sub></h1>
+            <h1 style="font-size: 100px;color: #000000;width: 420px;height: 160px;">
+                ╤╝<sub>rending</sub></h1>
         </div>
         <div class="row p-5 ">
             <div class="card_container col-2 shadow-lg m-5 rounded py-3">
                 <div class="card">
-                    <img src="pexels-rdne-6529599.jpg" alt="" class="w-100 h-100">
+                    <img src="assets/pexels-rdne-6529599.jpg" alt="" class="w-100 h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Sandwich</h5>
+                        <p class="cart-text">Lorem ipsum dolor sit amet.</p>
+                        <a href="" class="btn bg-success">like</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card_container col-2 shadow-lg m-5 rounded py-3">
+                <div class="card">
+                    <img src="assets/pexels-valeriya-1199960.jpg" alt="" class="w-100 h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Burger</h5>
+                        <p class="cart-text">Lorem ipsum dolor sit amet.</p>
+                        <a href="" class="btn bg-success">like</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card_container col-2 shadow-lg m-5 rounded py-3">
+                <div class="card">
+                    <img src="assets/pexels-ash-122861-376464.jpg" alt="" class="w-100 h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Pancake</h5>
+                        <p class="cart-text">Lorem ipsum dolor sit amet.</p>
+                        <a href="" class="btn bg-success">like</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card_container col-2 shadow-lg m-5 rounded py-3">
+                <div class="card">
+                    <img src="assets/pexels-fotios-photos-1279330.jpg" alt="" class="w-100 h-100">
                     <div class="card-body">
                         <h5 class="card-title">food name</h5>
                         <p class="cart-text">Lorem ipsum dolor sit amet.</p>
@@ -419,7 +259,7 @@
             </div>
             <div class="card_container col-2 shadow-lg m-5 rounded py-3">
                 <div class="card">
-                    <img src="pexels-valeriya-1199960.jpg" alt="" class="w-100 h-100">
+                    <img src="assets/pexels-fariphotography-803963.jpg" alt="" class="w-100 h-100">
                     <div class="card-body">
                         <h5 class="card-title">food name</h5>
                         <p class="cart-text">Lorem ipsum dolor sit amet.</p>
@@ -429,7 +269,7 @@
             </div>
             <div class="card_container col-2 shadow-lg m-5 rounded py-3">
                 <div class="card">
-                    <img src="pexels-ash-122861-376464.jpg" alt="" class="w-100 h-100">
+                    <img src="assets/pexels-brigitte-tohm-36757-239581.jpg" alt="" class="w-100 h-100">
                     <div class="card-body">
                         <h5 class="card-title">food name</h5>
                         <p class="cart-text">Lorem ipsum dolor sit amet.</p>
@@ -439,7 +279,7 @@
             </div>
             <div class="card_container col-2 shadow-lg m-5 rounded py-3">
                 <div class="card">
-                    <img src="pexels-fotios-photos-1279330.jpg" alt="" class="w-100 h-100">
+                    <img src="assets/pexels-sydney-troxell-223521-718742.jpg" alt="" class="w-100 h-100">
                     <div class="card-body">
                         <h5 class="card-title">food name</h5>
                         <p class="cart-text">Lorem ipsum dolor sit amet.</p>
@@ -449,37 +289,7 @@
             </div>
             <div class="card_container col-2 shadow-lg m-5 rounded py-3">
                 <div class="card">
-                    <img src="pexels-fariphotography-803963.jpg" alt="" class="w-100 h-100">
-                    <div class="card-body">
-                        <h5 class="card-title">food name</h5>
-                        <p class="cart-text">Lorem ipsum dolor sit amet.</p>
-                        <a href="" class="btn bg-success">like</a>
-                    </div>
-                </div>
-            </div>
-            <div class="card_container col-2 shadow-lg m-5 rounded py-3">
-                <div class="card">
-                    <img src="pexels-brigitte-tohm-36757-239581.jpg" alt="" class="w-100 h-100">
-                    <div class="card-body">
-                        <h5 class="card-title">food name</h5>
-                        <p class="cart-text">Lorem ipsum dolor sit amet.</p>
-                        <a href="" class="btn bg-success">like</a>
-                    </div>
-                </div>
-            </div>
-            <div class="card_container col-2 shadow-lg m-5 rounded py-3">
-                <div class="card">
-                    <img src="pexels-sydney-troxell-223521-718742.jpg" alt="" class="w-100 h-100">
-                    <div class="card-body">
-                        <h5 class="card-title">food name</h5>
-                        <p class="cart-text">Lorem ipsum dolor sit amet.</p>
-                        <a href="" class="btn bg-success">like</a>
-                    </div>
-                </div>
-            </div>
-            <div class="card_container col-2 shadow-lg m-5 rounded py-3">
-                <div class="card">
-                    <img src="pexels-mariana-kurnyk-844465-1775043.jpg" alt="" class="w-100 h-100">
+                    <img src="assets/pexels-mariana-kurnyk-844465-1775043.jpg" alt="" class="w-100 h-100">
                     <div class="card-body">
                         <h5 class="card-title">food name</h5>
                         <p class="cart-text">Lorem ipsum dolor sit amet.</p>

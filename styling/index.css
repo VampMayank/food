@@ -1,0 +1,173 @@
+body {
+    height: 150vh;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(253, 246, 236);
+    background-size: 300vh;
+    padding-top: 40px;
+}
+
+
+.navbar {
+    background-color: rgb(253, 231, 201);
+}
+
+.navbar-brand,
+.nav-link {
+    color: rgb(0, 0, 0);
+}
+
+.navbar-toggler {
+    border-color: rgb(61, 58, 58);
+}
+
+.nav-item {
+    font-size: larger;
+}
+
+#nabut:hover {
+    color: #fff;
+    text-decoration: #fff;
+}
+
+
+.dropdown-menu {
+    background-color: #ad795b;
+}
+
+.dropdown-item:hover {
+    background-color: rgb(255, 125, 65);
+    color: rgb(0, 0, 0);
+}
+
+.dropdown-item {
+    color: rgb(255, 255, 255)
+}
+
+.aa {
+    color: rgb(255, 255, 255);
+}
+
+.btn:hover {
+    color: black;
+}
+
+
+#sop {
+    background-color: rgb(253, 231, 201);
+}
+
+#brand:hover {
+    filter: grayscale(100px);
+}
+
+#hrf {
+    height: 3px;
+    background-color: #000000;
+
+}
+
+.text {
+    color: white;
+    text-decoration: none;
+}
+
+.text:hover {
+    font-weight: 600;
+}
+
+.custom-btn {
+    background-color: #000000;
+    color: #fff;
+}
+
+.custom-btn:hover {
+    background-color: #208839;
+    color: rgb(0, 0, 0);
+}
+
+#cardd {
+    width: 500px;
+    box-shadow: 0 0 10px 10px rgb(30, 34, 8);
+    border: 0cqb;
+}
+
+.card {
+    background-color: #9cc702;
+    background: transparent;
+}
+
+label {
+    color: #000000;
+}
+
+.custom-bt {
+    background-color: #ffffff;
+}
+
+.hero_container {
+    background: transparent;
+    width: 100%;
+
+}
+
+.video-container {
+    display: flex;
+    justify-self: end;
+    align-items: self-end;
+    height: 100%;
+    width: 100%;
+    padding-top: 100%;
+    /* 1:1 Aspect Ratio */
+    position: relative;
+
+
+}
+
+.video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90%;
+    height: 90%;
+    object-fit: cover;
+    /* Ensure video covers entire container */
+    border: #ad795b;
+    border-style: ridge;
+    border-radius: 900px;
+
+}
+
+.text-container {
+    margin-top: 2rem;
+    /* Adjust spacing */
+    width: 50%;
+}
+
+@media (max-width: 768px) {
+    .text-container {
+        margin-top: 0;
+    }
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #000;
+    /* Change this to the color you want */
+    border-radius: 50%;
+    /* Optional: make the background circular */
+    padding: 10px;
+    /* Optional: add padding to the icons */
+}
+
+#trend {
+    
+    padding: 0.25em 0.5em;
+    font-family: cursive;
+}
+
+.food_container{
+    background-color: #ffffff;
+    border-radius: 20px;
+    margin-bottom: 100px;
+}
