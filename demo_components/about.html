@@ -114,7 +114,7 @@
         }
 
         label {
-            color: #000000;
+            color: #145523;
         }
 
         .custom-bt {
@@ -122,35 +122,14 @@
         }
 
         .hero_container {
-            background: transparent;
+            padding: 50px;
+            background-color: #fff;
             width: 100%;
-
-        }
-
-        .video-container {
-            display: flex;
-            justify-self: end;
-            align-items: self-end;
-            height: 100%;
-            width: 100%;
-            padding-top: 100%;
-            /* 1:1 Aspect Ratio */
-            position: relative;
-
-
-        }
-
-        .video-container video {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 90%;
-            height: 90%;
-            object-fit: cover;
-            /* Ensure video covers entire container */
-            border: #ad795b;
-            border-style: ridge;
-            border-radius: 900px;
+            border-radius: 20px;
+            background: url(pexels-goumbik-349610.jpg);
+            filter: sepia(40%) drop-shadow(5px 5px 10px gray);;
+  background-repeat: no-repeat;
+  background-size: 100%;
 
         }
 
@@ -158,22 +137,6 @@
             margin-top: 2rem;
             /* Adjust spacing */
             width: 50%;
-        }
-
-        @media (max-width: 768px) {
-            .text-container {
-                margin-top: 0;
-            }
-        }
-
-        .carousel-control-prev-icon,
-        .carousel-control-next-icon {
-            background-color: #000;
-            /* Change this to the color you want */
-            border-radius: 50%;
-            /* Optional: make the background circular */
-            padding: 10px;
-            /* Optional: add padding to the icons */
         }
 
         #trend {
@@ -185,6 +148,37 @@
         .food_container{
             background-color: #ffffff;
             border-radius: 20px;
+        }
+        .form-container {
+            width: 800px;
+            margin: auto;
+            padding: 1.5rem;
+            
+            backdrop-filter: blur(5px);
+            border-radius: 0.5rem;
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+            color:#145523 ;
+        }
+
+        .rating-bar input[type=range] {
+            flex: 1;
+        }
+        .rating-bar input[type=range]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            background: black;
+            cursor: pointer;
+        }
+
+        .rating-bar input[type=range]::-moz-range-thumb {
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            background: black;
+            cursor: pointer;
         }
     </style>
 </head>
@@ -259,12 +253,32 @@
                             </div>
                         </div>
                         <div class="col-md-6 d-flex justify-content-center align-items-center">
-                            <div class="video-container">
-                                <video autoplay muted loop>
-                                    <source src="6093407-uhd_4096_2160_30fps.mp4" type="video/mp4">
-
-                                    Your browser does not support the video tag.
-                                </video>
+                            <div class="form-container">
+                                <h2 class="text-center mb-4">Feedback Form</h2>
+                                <form >
+                                    <div class="mb-3">
+                                        <label for="name" class="form-label">Name</label>
+                                        <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="phone" class="form-label">Phone</label>
+                                        <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number"
+                                            required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="email" class="form-label">Email</label>
+                                        <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                                    </div>
+                                    
+                                    <div class="mb-3">
+                                        <label for="rating" class="form-label">Rating</label>
+                                        <div class="rating-bar">
+                                            <input type="range" class="form-range" id="rating" min="1" max="5" step="1" oninput="this.nextElementSibling.value = this.value">
+                                            <output style="color: #208839;">3</output>
+                                        </div>
+                                    </div>
+                                    <button type="submit" class="btn btn-success w-100">Submit Feedback</button>
+                                </form>
                             </div>
                         </div>
                     </div>
