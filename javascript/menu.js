@@ -9,13 +9,16 @@ document.addEventListener('DOMContentLoaded', async()=>{
 
         dishes.forEach(item =>{
             const card = document.createElement('div');
-            card.className = 'container bg-light d-flex align-items-center py-2';
+            card.className = 'container card_container col-2 shadow-lg m-5 rounded py-3';
 
             card.innerHTML = `
-            <p>${item.name}</p>
-            <p>${item.description}</p>
-            <p>${item.price}</p>
-            <p>${item.url}</p>
+            <img src='${item.url}' alt="" width="100%" height="140px">
+                    <div class="card-body">
+                        <h5 class="card-title">${item.name}</h5>
+                        <p class="cart-text">${item.price}</p>
+                        <a href="" class="btn btn-outline-success">Add To Cart</a>
+                    </div>
+            
             `;
 
 
