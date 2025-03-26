@@ -33,7 +33,6 @@ document.addEventListener('DOMContentLoaded', async()=>{
                 
                 let cart = JSON.parse(localStorage.getItem('cart')) || [];
                 
-                
                 let found = false;
                 for (let i=0;i<cart.length;i++){
                     if(cart[i].name === item.name){
