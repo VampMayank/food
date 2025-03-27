@@ -2,14 +2,14 @@ body {
     height: 150vh;
     display: flex;
     flex-direction: column;
-    background-color: rgb(253, 246, 236);
+    background-color: rgb(228, 250, 130);
     background-size: 300vh;
     padding-top: 40px;
 }
 
 
 .navbar {
-    background-color: rgba(255, 149, 0, 0.2);  
+    background-color: rgba(77, 50, 13, 0.2);  
 }
 
 .navbar-brand,
@@ -153,7 +153,7 @@ label {
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-    background-color: #000;
+    background-color: #7c7e00;
     /* Change this to the color you want */
     border-radius: 50%;
     /* Optional: make the background circular */
@@ -175,11 +175,12 @@ label {
 .card_container{
     background-color: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(5px);
+    border-end-end-radius: 30px;
     
 }
 .card{
     border: none;
-    border-radius: 20px;
+    border-radius: 60px;
 }
 img{
     border-radius: 50px;
@@ -189,45 +190,3 @@ img{
 }
 
 
-
-  .box span{
-    position: relative;
-    margin-left: 30px;
-    top: 20px;
-    display:inline-flex;
-    animation: bounce 0.3s ease infinite alternate;
-  }
-  @keyframes bounce{
-    100%{
-      top: -20px;
-      text-shadow: 0 1px #ccc, 
-                   0 2px #ccc, 
-                   0 3px #ccc, 
-                   0 4px #ccc, 
-                   0 5px #ccc,
-                   0 6px #ccc, 
-                   0 7px #ccc, 
-                   0 8px #ccc, 
-                   0 9px #ccc, 
-                   0 50px 25px rgba(0, 0, 0, 0.2);
-    }
-  }
-  .box span:nth-child(1){
-    font-size: xx-large;
-  }
-  .box span:nth-child(2){
-    animation-delay:0.1s;
-    font-size: xx-large;
-  }
-  .box span:nth-child(3){
-    animation-delay:0.2s;
-    font-size: xx-large;
-  }
-  .box span:nth-child(4){
-    animation-delay:0.3s;
-    font-size: xx-large;
-  }
-  .box span:nth-child(5){
-    animation-delay:0.4s;
-    font-size: xx-large;
-  }

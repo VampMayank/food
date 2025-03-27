@@ -9,13 +9,29 @@ html {
 
 body {
   margin:0;
-  background: url(pexels-ella-olsson-572949-1640773.jpg);
+  background-image: url(https://img.freepik.com/free-photo/black-friday-elements-assortment_23-2149074076.jpg?t=st=1743013849~exp=1743017449~hmac=869dcb67d54b65cc5983cc35dd24b5d07c287a98e1b6d89182d67bd960da1606&w=1380);
   background-repeat: no-repeat;
   background-size: 100%;
 }
+
+#video-background {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    background-size: cover;
+  }
+
 .signup{
-    height: 100vh;
-    width: 100vw;
+    position: relative;
+      z-index: 1;
+      color: white;
+      padding: 20px;
+      background-color: rgba(151, 151, 151, 0.226);
     display: flex;
     justify-content: center;
     align-items: center;

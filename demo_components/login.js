@@ -2,6 +2,7 @@ const server = require("./node/server")
 
 
 
+
 //login form data fetch
 var Namefield=document.getElementById('NameId');
 var EmailField=document.getElementById('EmailId');
